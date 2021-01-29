@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+
+  &__checkout {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 0 0;
+  }
+
+  &__alert {
+    color: #33b13a;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #33b1ff;
+  }
+}
