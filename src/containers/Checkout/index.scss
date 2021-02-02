@@ -27,6 +27,31 @@
     align-items: center;
     width: 100%;
     border-bottom: 1px solid #eee;
+    input {
+      text-align: center;
+      width: 40px;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    button {
+      width: 20px;
+      height: 20px;
+      color: white;
+      margin: 0 5px;
+      background-color: black;
+      border-radius: 50%;
+    }
+    button:hover {
+      border: 1px solid black;
+      color: black;
+      background-color: white;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
   }
   &__element h4 {
     margin: 0;

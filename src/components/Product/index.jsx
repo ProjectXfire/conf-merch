@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import './index.scss';
 
-function Product({ product }) {
+function Product({ product, handleAddToCart }) {
+
   return (
     <div className='Products__item'>
       <img src={product.image} alt={product.title} />
@@ -16,7 +17,12 @@ function Product({ product }) {
         </h2>
         <p>{product.description}</p>
       </div>
-      <button type='button'>Comprar</button>
+      <button
+        type='button'
+        onClick={() => handleAddToCart(product)}
+      >
+        Comprar
+      </button>
     </div>
   )
 }

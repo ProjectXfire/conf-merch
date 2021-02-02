@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const DotenvWebpackPlugin = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/index.js', // Entrada de nuestro archivo principal
@@ -59,7 +60,8 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
-    })
+    }),
+    new DotenvWebpackPlugin(),
   ],
   devServer: { // Configuracion de nuestro servidor
     contentBase: path.join(__dirname, 'dist'),

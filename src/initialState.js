@@ -1,5 +1,11 @@
 export default {
   cart: [],
+  orders: [],
+  buyer: {
+    name: '', email: '', address: '',
+    apto: '', city: '', country: '',
+    state: '', namecp: '', phone: '',
+  },
   products: [
     {
       'id': '1',
